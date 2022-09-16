@@ -1,0 +1,42 @@
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, calc(100%/4));
+    /* grid-template-rows: repeat(2); */
+    gap: 2rem 2rem;
+}
+
+.box:nth-of-type(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.box:nth-of-type(4) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.box:nth-of-type(5) {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.box1 {
+
+}
+
+.box > img {
+    border: 1px solid hsl(263, 55%, 52%);
+    border-radius: 50%;
+}
